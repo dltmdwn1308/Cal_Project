@@ -50,14 +50,14 @@ public double GToLb(double g)
 ### 3. 코드의 주요 부분 설명 (핵심 로직)
 - 팩토리얼(Factorial)
 ```
-public static long Combination(int n, int r)
-{
-    if (r < 0 || r > n)
-    {
-        return -1;
-    }
-    return Factorial(n) / (Factorial(r) * Factorial(n - r));
-}
+public static long Factorial(int X)
+        {
+            if (X <= 1)
+            {
+                return 1;
+            }
+            return X * Factorial(X - 1);
+        }
 ```
 - 조합(Combination)
 ```
